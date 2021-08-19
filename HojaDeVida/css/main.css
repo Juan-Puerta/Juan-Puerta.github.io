@@ -14,6 +14,8 @@ body {
   color: #979998;
 }
 
+/** LETRAS **/
+
 .naranja {
   color: #e0a80d;
   font-weight: 600;
@@ -50,67 +52,28 @@ header .panel-der-uno h4 {
   color: #979899;
 }
 
-header {
-  display: flex;
-  height: 100%;
-}
+/** LETRAS **/
 
-.panel-izq-uno {
-  background-color: #2b2c2c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /**padding-left: 50px;
-  padding-right: 50px;**/
-  width: 50%;
-}
+/** IMAGEN **/
 
 #img-redonda {
-  border-radius: 600px;
-}
-
-.panel-der-uno {
-  background-color: #2d2f2f;
-  width: 100%;
-  padding-left: 50px;
-  padding-right: 100px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-ul li {
   display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-hr {
-  height: 2px;
-  color: #404343;
-  background: #404343;
-  font-size: 0;
-  border: 0;
-  margin-top: 10%;
-  margin-bottom: 2%;
-}
-
-#prueba {
-  display: flex;
-  justify-content: space-between;
-}
-
-#des-redes {
-  display: flex;
+#img-redonda img {
   width: 100%;
+  height: auto;
+  margin-top: -20px;
 }
 
-#des {
-  width: 50%;
-}
+/** IMAGEN **/
 
-#redes {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-}
+/** BOTONES **/
 
 .botones,
 .botones-dos {
@@ -129,12 +92,48 @@ hr {
   padding-right: 10px;
 }
 
-/**Se terminó todo lo que tiene que ver con la
-fila uno de la hoja de vida**/
+#redes {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
 
+/** BOTONES **/
+
+#des {
+  width: 50%;
+}
+
+header,
 section {
   display: flex;
   height: 100%;
+}
+
+#des-redes {
+  display: flex;
+  width: 100%;
+}
+
+/** PANELES **/
+
+.panel-izq-uno {
+  background-color: #2b2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /**padding-left: 50px;
+  padding-right: 50px;**/
+  width: 51.4%;
+}
+
+.panel-der-uno {
+  background-color: #2d2f2f;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .panel-izq-dos,
@@ -148,10 +147,6 @@ section {
   padding-bottom: 50px;
 }
 
-section div h6 {
-  text-align: right;
-}
-
 .panel-der-dos,
 .panel-der-tres,
 .panel-der-cua {
@@ -161,9 +156,6 @@ section div h6 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-/**Se terminó todo lo que tiene que ver con la
-fila de la INTRO**/
 
 .panel-izq-tres {
   background-color: #2b2c2c;
@@ -175,67 +167,17 @@ fila de la INTRO**/
   padding-right: 0px;
 }
 
-.caja-numero {
-  float: left;
-  margin-right: 10px;
-}
-
-.caja-cuerpo {
-  width: 80%;
-}
-
-.caja-completa {
-  float: left;
-  /**position: relative;**/
-  width: 49%;
-  height: auto;
-  margin-bottom: 40px;
-}
-
-/**Se terminó todo lo que tiene que ver con la
-fila de la la zona de EXPERTISE**/
-
 .panel-izq-cua {
-  width: 50%;
-}
-
-progress[value] {
-  width: 380px;
-  height: 5px;
-
-  /* Reinicializar estilos */
-
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-progress[value]::-webkit-progress-bar {
-  background-color: #404343;
-}
-
-progress[value]::-webkit-progress-value {
-  background-color: #e0a80d;
-}
-
-.contenedor {
-  display: flex;
-  float: left;
-  margin-bottom: 5%;
-  margin-right: 5%;
-}
-
-.panel-izq-cua {
-  width: 28.2%;
+  width: 29.1%;
 }
 
 .panel-der-cua {
   padding-right: 0px;
 }
 
-.porcentaje {
-  float: left;
-  margin-right: 10px;
-}
+/** PANELES **/
+
+/** MODALS **/
 
 .modal-contenido {
   background-color: #2b2c2c;
@@ -284,3 +226,80 @@ a h3 {
   width: 170px;
   text-align: center;
 }
+
+.porcentaje {
+  float: left;
+  margin-right: 10px;
+}
+
+.contenedor {
+  display: flex;
+  float: left;
+  margin-bottom: 5%;
+  margin-right: 5%;
+}
+
+/** MODALS **/
+
+/** BARRA DE INFORMACIÓN **/
+
+ul li {
+  display: inline-block;
+}
+
+hr {
+  height: 2px;
+  color: #404343;
+  background: #404343;
+  font-size: 0;
+  border: 0;
+  margin-top: 10%;
+  margin-bottom: 2%;
+}
+
+#info-general {
+  display: flex;
+  justify-content: space-between;
+}
+
+/** BARRA DE INFORMACIÓN **/
+
+section div h6 {
+  text-align: right;
+}
+
+.caja-numero {
+  float: left;
+  margin-right: 10px;
+}
+
+.caja-cuerpo {
+  width: 80%;
+}
+
+.caja-completa {
+  float: left;
+  width: 49%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+/** BARRA DE PROGRESO **/
+
+progress[value] {
+  width: 380px;
+  height: 5px;
+
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #404343;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #e0a80d;
+}
+
+/** BARRA DE PROGRESO **/
